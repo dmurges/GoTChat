@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		381A6EB61FC2F31600A4DE88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A6E9B1FC2F31600A4DE88 /* AppDelegate.swift */; };
+		381A6EB71FC2F31600A4DE88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 381A6E9C1FC2F31600A4DE88 /* Assets.xcassets */; };
+		381A6EB81FC2F31600A4DE88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381A6E9D1FC2F31600A4DE88 /* LaunchScreen.storyboard */; };
+		381A6EB91FC2F31600A4DE88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381A6E9F1FC2F31600A4DE88 /* Main.storyboard */; };
+		381A6EBA1FC2F31600A4DE88 /* ForumCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A6EA21FC2F31600A4DE88 /* ForumCreationViewController.swift */; };
+		381A6EBB1FC2F31600A4DE88 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A6EA31FC2F31600A4DE88 /* LoginViewController.swift */; };
+		381A6EBC1FC2F31600A4DE88 /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A6EA41FC2F31600A4DE88 /* MessagesController.swift */; };
+		381A6EBD1FC2F31600A4DE88 /* RoomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A6EA51FC2F31600A4DE88 /* RoomTableViewController.swift */; };
+		381A6EBE1FC2F31600A4DE88 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A6EA61FC2F31600A4DE88 /* SignUpController.swift */; };
+		381A6EBF1FC2F31600A4DE88 /* DragonTalk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 381A6EA71FC2F31600A4DE88 /* DragonTalk.xcdatamodeld */; };
+		381A6EC01FC2F31600A4DE88 /* SignUpExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A6EAA1FC2F31600A4DE88 /* SignUpExtensions.swift */; };
+		381A6EC11FC2F31600A4DE88 /* UIImageViewextensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A6EAB1FC2F31600A4DE88 /* UIImageViewextensions.swift */; };
+		381A6EC21FC2F31600A4DE88 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 381A6EAC1FC2F31600A4DE88 /* GoogleService-Info.plist */; };
+		381A6EC31FC2F31600A4DE88 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 381A6EAD1FC2F31600A4DE88 /* Info.plist */; };
+		381A6EC41FC2F31600A4DE88 /* Forum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A6EAF1FC2F31600A4DE88 /* Forum.swift */; };
+		381A6EC51FC2F31600A4DE88 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A6EB01FC2F31600A4DE88 /* Message.swift */; };
+		381A6EC61FC2F31600A4DE88 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A6EB11FC2F31600A4DE88 /* User.swift */; };
+		381A6EC71FC2F31600A4DE88 /* ForumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A6EB31FC2F31600A4DE88 /* ForumCell.swift */; };
+		381A6EC81FC2F31600A4DE88 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A6EB41FC2F31600A4DE88 /* MessageCell.swift */; };
+		381A6EC91FC2F31600A4DE88 /* MessageHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A6EB51FC2F31600A4DE88 /* MessageHeaderCell.swift */; };
+		DC14FFF1EDFEBF3A9E412897 /* Pods_DragonTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B025A465B94E9C69BE664BB1 /* Pods_DragonTalk.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		381A6E9B1FC2F31600A4DE88 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		381A6E9C1FC2F31600A4DE88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		381A6E9E1FC2F31600A4DE88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		381A6EA01FC2F31600A4DE88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		381A6EA21FC2F31600A4DE88 /* ForumCreationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumCreationViewController.swift; sourceTree = "<group>"; };
+		381A6EA31FC2F31600A4DE88 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		381A6EA41FC2F31600A4DE88 /* MessagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
+		381A6EA51FC2F31600A4DE88 /* RoomTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomTableViewController.swift; sourceTree = "<group>"; };
+		381A6EA61FC2F31600A4DE88 /* SignUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		381A6EA81FC2F31600A4DE88 /* DragonTalk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DragonTalk.xcdatamodel; sourceTree = "<group>"; };
+		381A6EAA1FC2F31600A4DE88 /* SignUpExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpExtensions.swift; sourceTree = "<group>"; };
+		381A6EAB1FC2F31600A4DE88 /* UIImageViewextensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewextensions.swift; sourceTree = "<group>"; };
+		381A6EAC1FC2F31600A4DE88 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		381A6EAD1FC2F31600A4DE88 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		381A6EAF1FC2F31600A4DE88 /* Forum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forum.swift; sourceTree = "<group>"; };
+		381A6EB01FC2F31600A4DE88 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		381A6EB11FC2F31600A4DE88 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		381A6EB31FC2F31600A4DE88 /* ForumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumCell.swift; sourceTree = "<group>"; };
+		381A6EB41FC2F31600A4DE88 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		381A6EB51FC2F31600A4DE88 /* MessageHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageHeaderCell.swift; sourceTree = "<group>"; };
+		383EDC841F66B46300948241 /* GoTchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoTchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45C0FD699C4A838D40C47426 /* Pods-DragonTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragonTalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-DragonTalk/Pods-DragonTalk.release.xcconfig"; sourceTree = "<group>"; };
+		B025A465B94E9C69BE664BB1 /* Pods_DragonTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DragonTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9641D08450D3368D061F1E5 /* Pods-DragonTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragonTalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DragonTalk/Pods-DragonTalk.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		383EDC811F66B46300948241 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC14FFF1EDFEBF3A9E412897 /* Pods_DragonTalk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		381A6E9A1FC2F31600A4DE88 /* GoTchat */ = {
+			isa = PBXGroup;
+			children = (
+				381A6E9B1FC2F31600A4DE88 /* AppDelegate.swift */,
+				381A6E9C1FC2F31600A4DE88 /* Assets.xcassets */,
+				381A6E9D1FC2F31600A4DE88 /* LaunchScreen.storyboard */,
+				381A6E9F1FC2F31600A4DE88 /* Main.storyboard */,
+				381A6EA11FC2F31600A4DE88 /* Controller */,
+				381A6EA71FC2F31600A4DE88 /* DragonTalk.xcdatamodeld */,
+				381A6EA91FC2F31600A4DE88 /* Extensions */,
+				381A6EAC1FC2F31600A4DE88 /* GoogleService-Info.plist */,
+				381A6EAD1FC2F31600A4DE88 /* Info.plist */,
+				381A6EAE1FC2F31600A4DE88 /* Model */,
+				381A6EB21FC2F31600A4DE88 /* View */,
+			);
+			path = GoTchat;
+			sourceTree = "<group>";
+		};
+		381A6EA11FC2F31600A4DE88 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				381A6EA21FC2F31600A4DE88 /* ForumCreationViewController.swift */,
+				381A6EA31FC2F31600A4DE88 /* LoginViewController.swift */,
+				381A6EA41FC2F31600A4DE88 /* MessagesController.swift */,
+				381A6EA51FC2F31600A4DE88 /* RoomTableViewController.swift */,
+				381A6EA61FC2F31600A4DE88 /* SignUpController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		381A6EA91FC2F31600A4DE88 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				381A6EAA1FC2F31600A4DE88 /* SignUpExtensions.swift */,
+				381A6EAB1FC2F31600A4DE88 /* UIImageViewextensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		381A6EAE1FC2F31600A4DE88 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				381A6EAF1FC2F31600A4DE88 /* Forum.swift */,
+				381A6EB01FC2F31600A4DE88 /* Message.swift */,
+				381A6EB11FC2F31600A4DE88 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		381A6EB21FC2F31600A4DE88 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				381A6EB31FC2F31600A4DE88 /* ForumCell.swift */,
+				381A6EB41FC2F31600A4DE88 /* MessageCell.swift */,
+				381A6EB51FC2F31600A4DE88 /* MessageHeaderCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		383EDC7B1F66B46300948241 = {
+			isa = PBXGroup;
+			children = (
+				381A6E9A1FC2F31600A4DE88 /* GoTchat */,
+				383EDC851F66B46300948241 /* Products */,
+				8EE9F70003D3A1B9E5D19084 /* Pods */,
+				ECAD049D85CB0DB52832CE09 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		383EDC851F66B46300948241 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				383EDC841F66B46300948241 /* GoTchat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EE9F70003D3A1B9E5D19084 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9641D08450D3368D061F1E5 /* Pods-DragonTalk.debug.xcconfig */,
+				45C0FD699C4A838D40C47426 /* Pods-DragonTalk.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ECAD049D85CB0DB52832CE09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B025A465B94E9C69BE664BB1 /* Pods_DragonTalk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		383EDC831F66B46300948241 /* GoTchat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 383EDC991F66B46300948241 /* Build configuration list for PBXNativeTarget "GoTchat" */;
+			buildPhases = (
+				ECF336766B3BDC6E78C6DC40 /* [CP] Check Pods Manifest.lock */,
+				383EDC801F66B46300948241 /* Sources */,
+				383EDC811F66B46300948241 /* Frameworks */,
+				383EDC821F66B46300948241 /* Resources */,
+				0F687CF171766A6046849DB4 /* [CP] Embed Pods Frameworks */,
+				CDF15111134A979ED104BF28 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoTchat;
+			productName = DragonTalk;
+			productReference = 383EDC841F66B46300948241 /* GoTchat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		383EDC7C1F66B46300948241 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "David Murges";
+				TargetAttributes = {
+					383EDC831F66B46300948241 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 44AB95XXEY;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 383EDC7F1F66B46300948241 /* Build configuration list for PBXProject "GoTchat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 383EDC7B1F66B46300948241;
+			productRefGroup = 383EDC851F66B46300948241 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				383EDC831F66B46300948241 /* GoTchat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		383EDC821F66B46300948241 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				381A6EB91FC2F31600A4DE88 /* Main.storyboard in Resources */,
+				381A6EC21FC2F31600A4DE88 /* GoogleService-Info.plist in Resources */,
+				381A6EB71FC2F31600A4DE88 /* Assets.xcassets in Resources */,
+				381A6EC31FC2F31600A4DE88 /* Info.plist in Resources */,
+				381A6EB81FC2F31600A4DE88 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F687CF171766A6046849DB4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DragonTalk/Pods-DragonTalk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDF15111134A979ED104BF28 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DragonTalk/Pods-DragonTalk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECF336766B3BDC6E78C6DC40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		383EDC801F66B46300948241 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				381A6EC11FC2F31600A4DE88 /* UIImageViewextensions.swift in Sources */,
+				381A6EBD1FC2F31600A4DE88 /* RoomTableViewController.swift in Sources */,
+				381A6EBF1FC2F31600A4DE88 /* DragonTalk.xcdatamodeld in Sources */,
+				381A6EBB1FC2F31600A4DE88 /* LoginViewController.swift in Sources */,
+				381A6EB61FC2F31600A4DE88 /* AppDelegate.swift in Sources */,
+				381A6EBA1FC2F31600A4DE88 /* ForumCreationViewController.swift in Sources */,
+				381A6EC51FC2F31600A4DE88 /* Message.swift in Sources */,
+				381A6EBC1FC2F31600A4DE88 /* MessagesController.swift in Sources */,
+				381A6EC91FC2F31600A4DE88 /* MessageHeaderCell.swift in Sources */,
+				381A6EC61FC2F31600A4DE88 /* User.swift in Sources */,
+				381A6EBE1FC2F31600A4DE88 /* SignUpController.swift in Sources */,
+				381A6EC01FC2F31600A4DE88 /* SignUpExtensions.swift in Sources */,
+				381A6EC71FC2F31600A4DE88 /* ForumCell.swift in Sources */,
+				381A6EC41FC2F31600A4DE88 /* Forum.swift in Sources */,
+				381A6EC81FC2F31600A4DE88 /* MessageCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		381A6E9D1FC2F31600A4DE88 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				381A6E9E1FC2F31600A4DE88 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		381A6E9F1FC2F31600A4DE88 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				381A6EA01FC2F31600A4DE88 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		383EDC971F66B46300948241 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		383EDC981F66B46300948241 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		383EDC9A1F66B46300948241 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9641D08450D3368D061F1E5 /* Pods-DragonTalk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 44AB95XXEY;
+				INFOPLIST_FILE = Gotchat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = david.DragonTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		383EDC9B1F66B46300948241 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45C0FD699C4A838D40C47426 /* Pods-DragonTalk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 44AB95XXEY;
+				INFOPLIST_FILE = Gotchat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = david.DragonTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		383EDC7F1F66B46300948241 /* Build configuration list for PBXProject "GoTchat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				383EDC971F66B46300948241 /* Debug */,
+				383EDC981F66B46300948241 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		383EDC991F66B46300948241 /* Build configuration list for PBXNativeTarget "GoTchat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				383EDC9A1F66B46300948241 /* Debug */,
+				383EDC9B1F66B46300948241 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		381A6EA71FC2F31600A4DE88 /* DragonTalk.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				381A6EA81FC2F31600A4DE88 /* DragonTalk.xcdatamodel */,
+			);
+			currentVersion = 381A6EA81FC2F31600A4DE88 /* DragonTalk.xcdatamodel */;
+			path = DragonTalk.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 383EDC7C1F66B46300948241 /* Project object */;
+}
