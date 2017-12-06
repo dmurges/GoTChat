@@ -27,6 +27,7 @@
 		381A6EC71FC2F31600A4DE88 /* ForumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A6EB31FC2F31600A4DE88 /* ForumCell.swift */; };
 		381A6EC81FC2F31600A4DE88 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A6EB41FC2F31600A4DE88 /* MessageCell.swift */; };
 		381A6EC91FC2F31600A4DE88 /* MessageHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A6EB51FC2F31600A4DE88 /* MessageHeaderCell.swift */; };
+		38C66FAD1FD7EC0E0019D3AC /* MessagesController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C66FAC1FD7EC0E0019D3AC /* MessagesController+CollectionView.swift */; };
 		DC14FFF1EDFEBF3A9E412897 /* Pods_DragonTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B025A465B94E9C69BE664BB1 /* Pods_DragonTalk.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		381A6EB41FC2F31600A4DE88 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		381A6EB51FC2F31600A4DE88 /* MessageHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageHeaderCell.swift; sourceTree = "<group>"; };
 		383EDC841F66B46300948241 /* GoTchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoTchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38C66FAC1FD7EC0E0019D3AC /* MessagesController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MessagesController+CollectionView.swift"; sourceTree = "<group>"; };
 		45C0FD699C4A838D40C47426 /* Pods-DragonTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragonTalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-DragonTalk/Pods-DragonTalk.release.xcconfig"; sourceTree = "<group>"; };
 		B025A465B94E9C69BE664BB1 /* Pods_DragonTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DragonTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9641D08450D3368D061F1E5 /* Pods-DragonTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragonTalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DragonTalk/Pods-DragonTalk.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,11 +78,11 @@
 				381A6E9C1FC2F31600A4DE88 /* Assets.xcassets */,
 				381A6E9D1FC2F31600A4DE88 /* LaunchScreen.storyboard */,
 				381A6E9F1FC2F31600A4DE88 /* Main.storyboard */,
+				381A6EAC1FC2F31600A4DE88 /* GoogleService-Info.plist */,
+				381A6EAD1FC2F31600A4DE88 /* Info.plist */,
 				381A6EA11FC2F31600A4DE88 /* Controller */,
 				381A6EA71FC2F31600A4DE88 /* DragonTalk.xcdatamodeld */,
 				381A6EA91FC2F31600A4DE88 /* Extensions */,
-				381A6EAC1FC2F31600A4DE88 /* GoogleService-Info.plist */,
-				381A6EAD1FC2F31600A4DE88 /* Info.plist */,
 				381A6EAE1FC2F31600A4DE88 /* Model */,
 				381A6EB21FC2F31600A4DE88 /* View */,
 			);
@@ -104,6 +106,7 @@
 			children = (
 				381A6EAA1FC2F31600A4DE88 /* SignUpExtensions.swift */,
 				381A6EAB1FC2F31600A4DE88 /* UIImageViewextensions.swift */,
+				38C66FAC1FD7EC0E0019D3AC /* MessagesController+CollectionView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38C66FAD1FD7EC0E0019D3AC /* MessagesController+CollectionView.swift in Sources */,
 				381A6EC11FC2F31600A4DE88 /* UIImageViewextensions.swift in Sources */,
 				381A6EBD1FC2F31600A4DE88 /* RoomTableViewController.swift in Sources */,
 				381A6EBF1FC2F31600A4DE88 /* DragonTalk.xcdatamodeld in Sources */,

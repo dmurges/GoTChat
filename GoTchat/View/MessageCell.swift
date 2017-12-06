@@ -18,7 +18,7 @@ class MessageCell: UICollectionViewCell {
     let textView: UITextView = {
         let tv = UITextView()
         tv.font = UIFont.boldSystemFont(ofSize: 12)
-        tv.backgroundColor = UIColor(red: 206/255, green: 22/255, blue: 47/255, alpha: 0.4)
+        tv.backgroundColor = UIColor.white
         tv.layer.cornerRadius = 5
         tv.layer.masksToBounds = true
         tv.isEditable = false
@@ -26,11 +26,19 @@ class MessageCell: UICollectionViewCell {
         return tv
     }()
     
+    let userName: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.backgroundColor = .white
+        label.textColor = .lightGray
+        return label
+    }()
+    
     
     let profileImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.layer.cornerRadius = 12
+        imageView.layer.cornerRadius = 5
         imageView.layer.masksToBounds = true
         imageView.contentMode = .scaleAspectFill
         return imageView
@@ -57,28 +65,35 @@ class MessageCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        self.backgroundColor = .white
         
         addSubview(textView)
         addSubview(profileImageView)
-        
-        
-        
         textView.addSubview(messageImageView)
+        addSubview(userName)
+        
+        
+        textView.leftAnchor.constraint(equalTo: leftAnchor, constant: 40).isActive = true
+        textView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        textView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.8).isActive = true
+        textView.heightAnchor.constraint(equalTo: self.heightAnchor).isActive = true
+        
         messageImageView.leftAnchor.constraint(equalTo: textView.leftAnchor).isActive = true
         messageImageView.topAnchor.constraint(equalTo: textView.topAnchor).isActive = true
         messageImageView.widthAnchor.constraint(equalTo: textView.widthAnchor).isActive = true
         messageImageView.heightAnchor.constraint(equalTo: textView.heightAnchor).isActive = true
         
-        textView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-        textView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-        textView.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
-        textView.heightAnchor.constraint(equalTo: self.heightAnchor).isActive = true
         
-        profileImageView.rightAnchor.constraint(equalTo: textView.rightAnchor).isActive = true
-        profileImageView.bottomAnchor.constraint(equalTo: textView.bottomAnchor, constant: -10).isActive = true
-        profileImageView.widthAnchor.constraint(equalToConstant: 24).isActive = true
-        profileImageView.heightAnchor.constraint(equalToConstant: 24).isActive = true
+        profileImageView.leftAnchor.constraint(equalTo: leftAnchor, constant: 4).isActive = true
+        profileImageView.topAnchor.constraint(equalTo: topAnchor, constant: 4).isActive = true
+        profileImageView.widthAnchor.constraint(equalToConstant: 30).isActive = true
+        profileImageView.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
+        userName.leftAnchor.constraint(equalTo: leftAnchor, constant: 44).isActive = true
+        userName.bottomAnchor.constraint(equalTo: profileImageView.topAnchor).isActive = true
+        userName.widthAnchor.constraint(equalTo: widthAnchor).isActive = true
+        userName.heightAnchor.constraint(equalToConstant: 15).isActive = true
+
 
         
     }

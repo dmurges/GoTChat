@@ -20,7 +20,6 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var LoginView: UIView!
     @IBOutlet weak var separatorView: UIView!
     @IBOutlet weak var LoginButton: UIButton!
-    @IBOutlet weak var ForgotPWButton: UIButton!
     @IBOutlet weak var SignUpButton: UIButton!
     
     
@@ -32,7 +31,6 @@ class LoginViewController: UIViewController {
 
         
         setupLoginView ()
-        setupForgotPWButton()
         setupLoginButton()
         setupSignUpButton()
     }
@@ -53,11 +51,21 @@ class LoginViewController: UIViewController {
             
             if error != nil {
                 print(error!)
+                self.showAlert()
                 return
             }
             
             self.dismiss(animated: true, completion: nil)
         })
+    }
+    
+    private func showAlert() {
+        let alertController = UIAlertController(title: "Wrong email or password", message: "Please enter a valid email and password", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        present(alertController, animated: true) {
+            self.passwordText.text = nil
+        }
+        
     }
     
     
@@ -69,10 +77,6 @@ class LoginViewController: UIViewController {
         SignUpButton.layer.masksToBounds = true
     }
     
-    func setupForgotPWButton() {
-        ForgotPWButton.layer.cornerRadius = 5.0
-        ForgotPWButton.layer.masksToBounds = true
-    }
     
     func setupLoginButton() {
         LoginButton.layer.cornerRadius = 5.0

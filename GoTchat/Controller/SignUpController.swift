@@ -49,6 +49,7 @@ class SignUpController: UIViewController {
             
             if error != nil {
                 print(error!)
+                self.emailAlert()
                 return
             }
             
@@ -74,12 +75,9 @@ class SignUpController: UIViewController {
                         self.uploadInformation(uid: uid, values: values)
                     }
                     
-                    
                 })
             }
-            
-
-            
+        
         })
     }
     
@@ -105,7 +103,11 @@ class SignUpController: UIViewController {
     }
     
     
-    
+    private func emailAlert() {
+        let alertController = UIAlertController(title: "Email already exists/invalid or unsafe password", message: "Please choose a different email or password", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        present(alertController, animated: true, completion: nil)
+    }
     
     func setupSignUpButton() {
         signUpButton.layer.cornerRadius = 5.0

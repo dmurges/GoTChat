@@ -52,7 +52,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -82,16 +82,6 @@
                                     <action selector="didLogIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y8y-gy-mhn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eP3-v4-Wdf">
-                                <rect key="frame" x="137" y="451" width="101" height="27"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="S16-nX-F8q"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title="Forgot Password?">
-                                    <color key="titleColor" red="0.21080886300000001" green="0.22596763959999999" blue="0.22533112529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaS-ag-fo5">
                                 <rect key="frame" x="16" y="597" width="343" height="50"/>
                                 <constraints>
@@ -110,7 +100,6 @@
                         <constraints>
                             <constraint firstItem="PXQ-gm-dQB" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="13p-K1-Jr7"/>
                             <constraint firstItem="PpX-Gp-3h8" firstAttribute="top" secondItem="PXQ-gm-dQB" secondAttribute="bottom" constant="8" id="AkL-Cw-LNP"/>
-                            <constraint firstItem="eP3-v4-Wdf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J34-jK-q9b"/>
                             <constraint firstItem="PXQ-gm-dQB" firstAttribute="top" relation="lessThanOrEqual" secondItem="cL3-gF-YGC" secondAttribute="bottom" constant="30" id="Le2-rW-0vx"/>
                             <constraint firstItem="RaS-ag-fo5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OR7-16-nIl"/>
                             <constraint firstItem="PXQ-gm-dQB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Z17-UV-GHe"/>
@@ -121,13 +110,11 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PXQ-gm-dQB" secondAttribute="bottom" constant="272" id="gBb-VB-vSK"/>
                             <constraint firstItem="cL3-gF-YGC" firstAttribute="centerX" secondItem="PXQ-gm-dQB" secondAttribute="centerX" id="k7Y-Rm-cck"/>
                             <constraint firstItem="PpX-Gp-3h8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kPG-D0-I5K"/>
-                            <constraint firstItem="eP3-v4-Wdf" firstAttribute="top" secondItem="PpX-Gp-3h8" secondAttribute="bottom" constant="8" id="qJE-E3-oqG"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RaS-ag-fo5" secondAttribute="bottom" constant="20" id="qcF-0g-j2f"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RaS-ag-fo5" secondAttribute="trailing" id="w04-V9-CPK"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="ForgotPWButton" destination="eP3-v4-Wdf" id="liC-f8-Pct"/>
                         <outlet property="LoginButton" destination="PpX-Gp-3h8" id="YeB-dg-lHN"/>
                         <outlet property="LoginView" destination="PXQ-gm-dQB" id="GC5-mf-6Sl"/>
                         <outlet property="SignUpButton" destination="RaS-ag-fo5" id="KO6-iG-tif"/>
@@ -187,7 +174,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7yp-on-Odb">
                                         <rect key="frame" x="5" y="0.0" width="333" height="50"/>

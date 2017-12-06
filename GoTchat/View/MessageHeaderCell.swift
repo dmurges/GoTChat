@@ -14,7 +14,7 @@ class MessageHeaderCell: UICollectionViewCell {
     let textView: UITextView = {
         let tv = UITextView()
         tv.font = UIFont.boldSystemFont(ofSize: 22)
-        tv.textColor = UIColor.white
+        tv.textColor = UIColor.lightGray
         tv.backgroundColor = UIColor.clear
         tv.layer.cornerRadius = 5
         tv.layer.masksToBounds = true

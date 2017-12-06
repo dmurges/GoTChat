@@ -112,15 +112,15 @@ class MessagesController: UICollectionViewController, UITextFieldDelegate, UICol
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = .white
         collectionView?.contentInset = UIEdgeInsets(top: 8, left: 0, bottom: 8, right: 0)
-        collectionView?.backgroundColor = UIColor.clear
+        collectionView?.backgroundColor = UIColor.white
         collectionView?.alwaysBounceVertical = true
         collectionView?.register(MessageHeaderCell.self, forCellWithReuseIdentifier: headerCellId)
         collectionView?.register(MessageCell.self, forCellWithReuseIdentifier: cellId)
         collectionView?.keyboardDismissMode = .interactive
         getCurrentUser()
-        createGradientColor()
+//        createGradientColor()
         setupKeyboardObservers()
 
     }
@@ -208,9 +208,6 @@ class MessagesController: UICollectionViewController, UITextFieldDelegate, UICol
     func setupKeyboardObservers() {
         NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardDidShow), name: NSNotification.Name.UIKeyboardDidShow, object: nil)
         
-//        NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-//
-//        NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
     func handleKeyboardDidShow() {
@@ -297,101 +294,11 @@ class MessagesController: UICollectionViewController, UITextFieldDelegate, UICol
         }, withCancel: nil)
     }
     
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 2
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        if section == 0 {
-            return 1
-            
-        }else {
-            return messages.count
-        }
-    
-    }
-    
-    
-    
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let headerCell = collectionView.dequeueReusableCell(withReuseIdentifier: headerCellId, for: indexPath) as! MessageHeaderCell
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! MessageCell
-        
-        cell.messagesController = self
-        
-        if indexPath.section == 0 {
-            
-            let message = forum?.Title
-            headerCell.textView.text = message
-            return headerCell
-
-
-        }else {
-            
-            let message = messages[indexPath.item]
-            cell.textView.text = message.message
-            
-            if let profileImageUrl = self.user?.profileImageUrl {
-                cell.profileImageView.loadImageUsingCache(urlString: profileImageUrl)
-            }
-            
-            if message.imageUrl != nil {
-                cell.widthAnchor.constraint(equalToConstant: 200).isActive = true
-            }
-            
-            if let messageImageUrl = message.imageUrl {
-                cell.messageImageView.loadImageUsingCache(urlString: messageImageUrl)
-                cell.messageImageView.isHidden = false
-            } else {
-                cell.messageImageView.isHidden = true
-            }
-            return cell
-        }
-        
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        if section == 0 {
-            return UIEdgeInsetsMake(10, 10, 10, 10)
-        }else {
-            return UIEdgeInsetsMake(5, 5, 5, 5)
-        }
-    }
-    
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        var height: CGFloat = 80
-        
-        
-        if indexPath.section == 0 {
-            
-            if let text = forum?.Title {
-                height = estimateFrameForText(text: text).height + 50
-            }
-            return CGSize(width: view.frame.width , height: height)
-
-        }else {
-            
-            
-            if let text = messages[indexPath.item].message {
-                height = estimateFrameForText(text: text).height + 20
-            } else if let imageWidth = messages[indexPath.item].imageWidth?.floatValue, let imageHeight = messages[indexPath.item].imageHeight?.floatValue {
-                
-                
-                height = CGFloat(imageHeight / imageWidth * 200)
-            }
-            
-            return CGSize(width: view.frame.width , height: height)
-        }
-        
-    }
     
     
     func estimateFrameForText(text: String) -> CGRect {
         let screenSize = UIScreen.main.bounds
-        let screenWidth = screenSize.width
+        let screenWidth = screenSize.width - 50
         let size = CGSize(width: screenWidth, height: 1000)
         let options = NSStringDrawingOptions.usesFontLeading.union(.usesLineFragmentOrigin)
         return NSString(string: text).boundingRect(with: size, options: options, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 16)], context: nil)
@@ -399,15 +306,15 @@ class MessagesController: UICollectionViewController, UITextFieldDelegate, UICol
     
     
     var containerViewBottomAnchor: NSLayoutConstraint?
-
     
     func sendMessage() {
         let forumId = forum?.id
         let ref = FIRDatabase.database().reference().child("messages")
         let childRef = ref.childByAutoId()
         let fromUserId = FIRAuth.auth()?.currentUser?.uid
+        let fromUserName = user?.name
         let timestamp = Int(NSDate().timeIntervalSince1970)
-        let values = ["message": inputTextField.text!, "fromUserId": fromUserId!,"toForumId": forumId!, "timestamp": timestamp] as [String : Any]
+        let values = ["message": inputTextField.text!, "fromUserId": fromUserId!,"fromUserName": fromUserName!,"toForumId": forumId!, "timestamp": timestamp] as [String : Any]
         childRef.updateChildValues(values) { (error, ref) in
             
             if error != nil {

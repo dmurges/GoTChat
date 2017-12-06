@@ -10,6 +10,7 @@ import UIKit
 
 class Message: NSObject {
 
+    var fromUserName:String?
     var toForumId: String?
     var timestamp: NSNumber?
     var message: String?
